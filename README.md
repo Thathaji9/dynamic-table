@@ -17,7 +17,7 @@ This project is a dynamic, reusable table component built using **React**, **Typ
 
 ## 📸 Preview
 
-> (./public/preview.png)
+> ![Dynamic Table Preview](./public/preview.png)
 
 ---
 

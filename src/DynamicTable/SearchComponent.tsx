@@ -50,10 +50,19 @@ export const SearchComponent = memo(({ data, getData }: SearchProps) => {
   );
 
   return (
-    <div style={{ display: "flex", columnGap: 4 }}>
-      <input type="text" value={searchText} onChange={handleOnChange} placeholder="Search name or email..."/>
-      <select onChange={(e) => handleRoleFilter(e.target.value)}>
-        <option value="">All</option>
+    <div className="search-filter-wrapper">
+      <input
+        className="search-input"
+        type="text"
+        value={searchText}
+        onChange={handleOnChange}
+        placeholder="Search by name or email"
+      />
+      <select
+        className="role-select"
+        onChange={(e) => handleRoleFilter(e.target.value)}
+      >
+        <option value="">All Roles</option>
         <option value="Admin">Admin</option>
         <option value="Member">Member</option>
         <option value="Guest">Guest</option>
